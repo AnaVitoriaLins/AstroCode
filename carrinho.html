@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Carrinho de Compras</h1>
+    <div class="products">
+        <div class="product">
+            <h2>Produto 1</h2>
+            <p>Preço: R$ 10,00</p>
+            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 20,00</p>
+            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>Produto 3</h2>
+            <p>Preço: R$ 30,00</p>
+            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <h2>Produto 4</h2>
+            <p>Preço: R$ 40,00</p>
+            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <h2>Itens no Carrinho</h2>
+    <ul id="cart"></ul>
+    <h3>Total: R$ <span id="total">0.00</span></h3>
+    <h3>Quantidade de Itens: <span id="itemCount">0</span></h3>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #000080; /* Azul marinho */
+}
+
+h1, h2, h3 {
+    color: #000080; /* Azul marinho */
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #000080; /* Azul marinho */
+    padding: 10px;
+    width: 200px;
+    background-color: #ffffff; /* Branco */
+}
+
+button {
+    background-color: #000080; /* Azul marinho */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4682b4; /* Azul aço */
+}
+
+</style>

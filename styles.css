@@ -1,0 +1,305 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     outline: none;
+
+
+ }
+
+ body {
+     background-color: rgb(214, 215, 223);
+ }
+
+ section,
+ footer {
+     padding: 54px 0;
+     padding: 50px 0;
+     color: #ffffff;
+     font-family: "Inter", sans-serif;
+
+ }
+
+ h3 {
+     font-size: 50px;
+
+
+ }
+
+ p {
+     padding: 30px;
+     color: #fffafa;
+     font-size: 30px;
+     text-transform: lowercase;
+ }
+
+ .container {
+     max-width: 1400px;
+     margin: 0 auto;
+     padding: 0 5%;
+
+
+ }
+
+ .btn {
+    background-color: #3164b7;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 11px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    transition: all 0.3s ease;
+ }
+
+ .btn.animate-btn {
+     animation: animate-outline 1.5s ease-out infinite;
+     
+ }
+
+ .btn:hover {
+     transform: scale(1.2); /* Aumenta 10% no clique */
+    background-color: #1e4a90;
+     
+ }
+ 
+
+ @keyframes animate-outline {
+     from {
+         outline: 0px solid #dfdfdf;
+     }
+
+     to {
+         outline: 15px solid rgba(79, 155, 249, 0);
+     }
+ }
+
+ header {
+    background-position: center;
+    background-size: contain; /* A imagem será completamente visível, sem cortes */
+    background-attachment: fixed;
+    background-image: url(./imagens/gif.2.gif);
+    height: 100vh;
+
+
+ }
+
+
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    height: 250px;
+ }
+ nav img {
+    width: 300px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+  
+ }
+
+ nav ul {
+     display: flex;
+     align-items: center;
+ }
+
+ nav ul a {
+     color: beige;
+     margin: 0 25px;
+     text-transform: uppercase;
+     font-size: 18px;
+     display: block;
+ }
+
+ nav ul a:not(.btn)::after {
+     content: "";
+     background-color: white;
+     height: 3px;
+     width: 0%;
+     display: block;
+     margin: 0 auto;
+     transition: 0.3s;
+ }
+
+ nav ul a:hover::after {
+     width: 100%;
+ }
+
+ .banner {
+     display: flex;
+     justify-content: center;
+    
+   
+ }
+
+ .banner .banner-text {
+     text-align: center;
+   
+ }
+
+ h1 {
+     font-size: 90px;
+     color: white;
+     margin: 0 1px 10px;
+ }
+
+ .banner .banner-text p {
+     font-size: 30px;
+     color: #dfdfdf;
+     font-weight: lighter;
+     margin: 20px 10%;
+ }
+
+ /*faca mais*/
+ .faca-mais .container {
+     display: flex;
+     align-items: center;
+     width: 100%;
+ }
+
+ .faca-mais .faca-mais-text {
+     width: 50%;
+     padding: 20px;
+ }
+
+ .faca-mais .faca-mais-text h3 {
+     font-size: 30px;
+     color: black;
+ }
+
+ .faca-mais .faca-mais-text p {
+     margin: 5px 0 10px 0;
+     font-size: 20px;
+     color: black;
+
+ }
+
+ .faca-mais .faca-mais-img {
+     width: 50%;
+ }
+
+ .faca-mais .faca-mais-img img {
+     width: 100%;
+     height: auto;
+ }
+
+
+ /*faca menos*/
+ .faca-menos .container {
+     display: flex;
+     align-items: center;
+     width: 100%;
+ }
+
+ .faca-menos .faca-menos-text {
+     width: 50%;
+     padding: 20px;
+ }
+
+ .faca-menos .faca-menos-text h3 {
+     font-size: 30px;
+     color: black;
+ }
+
+ .faca-menos .faca-menos-text p {
+     margin: 5px 0 10px 0;
+     font-size: 20px;
+     color: black;
+ }
+
+ .faca-menos .faca-menos-img {
+     width: 50%;
+ }
+
+ .faca-menos .faca-menos-img img {
+     width: 100%;
+     height: auto;
+ }
+
+ .cursos h3 {
+    text-align: center;
+    color: black;
+}
+
+.cursos p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(46, 42, 42);
+}
+
+.cursos .caixa {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as caixas */
+    flex-wrap: wrap; /* Garante que o layout se ajuste caso o espaço seja pequeno */
+   
+
+}
+.caixa-itens:hover {
+    transform: scale(1.05);
+    
+  
+}
+
+
+.cursos .caixa-itens {
+    background-color: #11213842;
+    margin: 15px;
+    border-radius: 14px;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(23, 35, 201);
+    transition: 0.3s;
+}
+
+
+.cursos .caixa-itens img  {
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    margin: 12px auto;
+    padding-top: 10px;
+    width: 200px;  
+    height: 200px;
+    padding-bottom: 5px;
+
+    
+}
+.cursos .caixa-itens .nome {
+    font-size: 30px;
+    color: rgb(2, 2, 2);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 2px 3px  #fffafa;
+
+}
+.cursos .caixa-itens .depoimento {
+    color: #fffafa;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin: -10px;
+    padding-top: 5px;
+   
+}
+
+
+.cursos  .estrelas {
+    margin: 35px 0;
+    border-top: 2px solid #71777f; /* Borda superior */
+    text-align: center; /* Centraliza as estrelas */
+    color: rgb(59, 134, 226); /* Cor das estrelas */
+    font-size: 45x; /* Tamanho das estrelas */
+    margin: 0 5px; /* Espaçamento entre as estrelas */
+    text-shadow: 2px 2px 2px #fffafa;
+}
+.cursos .caixa-itens:hover{
+    background-color: #98bcf0a2;
+    margin-top: -5px;
+
+}
+
+
